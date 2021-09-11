@@ -1,0 +1,55 @@
+[
+    {
+        "name":"Filter by Type",
+        "key":"type",
+        "sub":[
+            {"name":"Amphibian","key":"amphibian"},
+            {"name":"Angel","key":"angel"},
+            {"name":"Aquatic","key":"aquatic"},
+            {"name":"Beastman","key":"beastman"},
+            {"name":"Birdman","key":"birdman"},
+            {"name":"Bug","key":"bug"},
+            {"name":"Crustacean","key":"crustacean"},
+            {"name":"Demihuman","key":"demihuman"},
+            {"name":"Demon Beast","key":"demonbeast"},
+            {"name":"Demon","key":"demon"},
+            {"name":"Dwarf","key":"dwarf"},
+            {"name":"Elemental","key":"elemental"},
+            {"name":"Elf","key":"elf"},
+            {"name":"Ex-Giant","key":"exgiant"},
+            {"name":"Fairy","key":"fairy"},
+            {"name":"Fish","key":"fish"},
+            {"name":"Magic Material","key":"magicmaterial"},
+            {"name":"Majin","key":"majin"},
+            {"name":"Mermaid","key":"mermaid"},
+            {"name":"Mollusc","key":"mollusc"},
+            {"name":"Plant","key":"plant"},
+            {"name":"Reptile","key":"reptile"},
+            {"name":"Semiliquid","key":"semiliquid"},
+            {"name":"Shapeshifter","key":"shapeshifter"},
+            {"name":"Single-Eyed Demihuman","key":"singleeyed"},
+            {"name":"Tentacle","key":"tentacle"},
+            {"name":"Undead","key":"undead"}
+        ]
+    },
+    {
+        "name":"Filter by Year",
+        "key":"year",
+        "sub":[
+            {"name":"2007","key":"2007"},
+            {"name":"2008","key":"2008"},
+            {"name":"2009","key":"2009"},
+            {"name":"2010","key":"2010"},
+            {"name":"2011","key":"2011"},
+            {"name":"2012","key":"2012"},
+            {"name":"2013","key":"2013"},
+            {"name":"2014","key":"2014"},
+            {"name":"2015","key":"2015"},
+            {"name":"2016","key":"2016"},
+            {"name":"2017","key":"2017"},
+            {"name":"2018","key":"2018"},
+            {"name":"2019","key":"2019"},
+            {"name":"2020","key":"2020"}
+        ]
+    }
+]
