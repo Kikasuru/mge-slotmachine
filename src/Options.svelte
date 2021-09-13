@@ -2,6 +2,8 @@
     @import "./global.scss";
 
     .options {
+        overflow-y: scroll;
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -14,6 +16,8 @@
         width: 100%;
         
         background-color: $dark-2;
+
+        &::-webkit-scrollbar { width: 0; }
 
         .close {
             position: fixed;
@@ -43,6 +47,8 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
+
+            flex-wrap: wrap;
         }
 
         .option-list {
@@ -50,7 +56,7 @@
             flex-direction: column;
             justify-content: left;
 
-            width: 250px;
+            flex: 0 1 250px;
             padding: 8px;
 
             user-select: none;
