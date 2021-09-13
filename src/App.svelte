@@ -135,6 +135,8 @@
             return;
         }
 
+        if (reelCount === 0) return;
+
         reels.forEach((e, i) => {
             if (e && e.roll) e.roll(qualify, 200 * i);
         });
