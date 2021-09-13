@@ -127,7 +127,6 @@
 
     let spinning = false;
 
-    // TODO: Add error handling
     function rollReels() {
         const qualify = getQualifyingMamano(type, year);
 
