@@ -38,7 +38,12 @@
 
                 &.clickable {
                     cursor: pointer;
-                    &:hover { background-color: $dark-0; }
+                    &:hover {
+                        background-color: $dark-0;
+                        @media (hover: none) {
+                            background-color: $dark-1;
+                        }
+                    }
                 }
 
                 &.first {

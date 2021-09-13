@@ -40,7 +40,12 @@
             user-select: none;
             
             cursor: pointer;
-            &:hover { background-color: $dark-0; }
+            &:hover {
+                background-color: $dark-0;
+                @media (hover: none) {
+                    background-color: $dark-1;
+                }
+            }
         }
 
         .option-set {
@@ -49,8 +54,8 @@
             justify-content: center;
 
             @media (max-width: 500px) {
-            flex-wrap: wrap;
-        }
+                flex-wrap: wrap;
+            }
         }
 
         .option-list {
@@ -69,10 +74,20 @@
                 display: flex;
                 padding: 4px;
 
-                &:hover { background-color: $dark-1; }
+                &:hover {
+                    background-color: $dark-1;
+                    @media (hover: none) {
+                        background-color: $dark-1;
+                    }
+                }
 
                 &.selected { background-color: $main-0; }
-                &.selected:hover { background-color: $main-1; }
+                &.selected:hover {
+                    background-color: $main-1;
+                    @media (hover: none) {
+                        background-color: $main-0;
+                    }
+                }
 
                 .icon {
                     height: 20px;
@@ -95,7 +110,12 @@
                 &.mass-toggler {
                     background-color: $dark-1;
                     justify-content: center;
-                    &:hover { background-color: $dark-0; }
+                    &:hover {
+                        background-color: $dark-0;
+                        @media (hover: none) {
+                            background-color: $dark-1;
+                        }
+                    }
                 }
             }
         }
