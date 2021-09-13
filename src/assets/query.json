@@ -1,38 +1,38 @@
-[
-    {
+{
+    "type":{
         "name":"Filter by Type",
         "key":"type",
         "sub":[
-            {"name":"Amphibian","key":"amphibian"},
-            {"name":"Angel","key":"angel"},
-            {"name":"Aquatic","key":"aquatic"},
-            {"name":"Beastman","key":"beastman"},
-            {"name":"Birdman","key":"birdman"},
-            {"name":"Bug","key":"bug"},
-            {"name":"Crustacean","key":"crustacean"},
-            {"name":"Demihuman","key":"demihuman"},
-            {"name":"Demon Beast","key":"demonbeast"},
-            {"name":"Demon","key":"demon"},
-            {"name":"Dwarf","key":"dwarf"},
-            {"name":"Elemental","key":"elemental"},
-            {"name":"Elf","key":"elf"},
-            {"name":"Ex-Giant","key":"exgiant"},
-            {"name":"Fairy","key":"fairy"},
-            {"name":"Fish","key":"fish"},
-            {"name":"Magic Material","key":"magicmaterial"},
-            {"name":"Majin","key":"majin"},
-            {"name":"Mermaid","key":"mermaid"},
-            {"name":"Mollusc","key":"mollusc"},
-            {"name":"Plant","key":"plant"},
-            {"name":"Reptile","key":"reptile"},
-            {"name":"Semiliquid","key":"semiliquid"},
-            {"name":"Shapeshifter","key":"shapeshifter"},
-            {"name":"Single-Eyed Demihuman","key":"singleeyed"},
-            {"name":"Tentacle","key":"tentacle"},
-            {"name":"Undead","key":"undead"}
+            {"name":"Amphibian","key":"amphibian","icon":"icons/icon_reptile.png"},
+            {"name":"Angel","key":"angel","icon":"icons/icon_angel.png"},
+            {"name":"Aquatic","key":"aquatic","icon":"icons/icon_fish.png"},
+            {"name":"Beastman","key":"beastman","icon":"icons/icon_animal.png"},
+            {"name":"Birdman","key":"birdman","icon":"icons/icon_bards.png"},
+            {"name":"Bug","key":"bug","icon":"icons/icon_insect.png"},
+            {"name":"Crustacean","key":"crustacean","icon":"icons/icon_fish.png"},
+            {"name":"Demihuman","key":"demihuman","icon":"icons/icon_demihuman.png"},
+            {"name":"Demon Beast","key":"demonbeast","icon":"icons/icon_animal.png"},
+            {"name":"Demon","key":"demon","icon":"icons/icon_devil.png"},
+            {"name":"Dwarf","key":"dwarf","icon":"icons/icon_demihuman.png"},
+            {"name":"Elemental","key":"elemental","icon":"icons/icon_element.png"},
+            {"name":"Elf","key":"elf","icon":"icons/icon_demihuman.png"},
+            {"name":"Ex-Giant","key":"exgiant","icon":"icons/icon_demihuman.png"},
+            {"name":"Fairy","key":"fairy","icon":"icons/icon_demihuman.png"},
+            {"name":"Fish","key":"fish","icon":"icons/icon_fish.png"},
+            {"name":"Magic Material","key":"magicmaterial","icon":"icons/icon_golem.png"},
+            {"name":"Majin","key":"majin","icon":"icons/icon_majin.png"},
+            {"name":"Mermaid","key":"mermaid","icon":"icons/icon_fish.png"},
+            {"name":"Mollusc","key":"mollusc","icon":"icons/icon_fish.png"},
+            {"name":"Plant","key":"plant","icon":"icons/icon_plant.png"},
+            {"name":"Reptile","key":"reptile","icon":"icons/icon_reptile.png"},
+            {"name":"Semiliquid","key":"semiliquid","icon":"icons/icon_slime.png"},
+            {"name":"Shapeshifter","key":"shapeshifter","icon":"icons/icon_golem.png"},
+            {"name":"Single-Eyed Demihuman","key":"singleeyed","icon":"icons/icon_ex.png"},
+            {"name":"Tentacle","key":"tentacle","icon":"icons/icon_ex.png"},
+            {"name":"Undead","key":"undead","icon":"icons/icon_undead.png"}
         ]
     },
-    {
+    "year":{
         "name":"Filter by Year",
         "key":"year",
         "sub":[
@@ -52,4 +52,4 @@
             {"name":"2020","key":"2020"}
         ]
     }
-]
+}

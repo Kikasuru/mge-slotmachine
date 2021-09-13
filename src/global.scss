@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@400;500&display=swap.css');
+
+$serif-font: 'Ubuntu', sans-serif;
+$mono-font: 'Ubuntu Mono', monospace;
+
+$dark-0: #251819;
+$dark-1: #322022;
+$dark-2: #3E282B;
+$dark-3: #4B3033;
+$lght-0: #EFE6E7;
+$lght-1: #E7DADB;
+$lght-2: #DFCECF;
+$lght-3: #D7C1C3;
+$main-0: #CE5192;
+$main-1: #567E4E;
+
+:root {
+    font-family: $serif-font;
+    font-weight: normal;
+    color: $lght-0;
+}
+
+:global(body) {
+    margin: 0;
+    background-color: $dark-2;
+}
