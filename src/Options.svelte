@@ -48,7 +48,9 @@
             flex-direction: row;
             justify-content: center;
 
+            @media (max-width: 500px) {
             flex-wrap: wrap;
+        }
         }
 
         .option-list {
@@ -56,7 +58,7 @@
             flex-direction: column;
             justify-content: left;
 
-            flex: 0 1 250px;
+            flex: 0 0 250px;
             padding: 8px;
 
             user-select: none;
