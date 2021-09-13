@@ -1,1 +1,0 @@
-# mge-slotmachine
