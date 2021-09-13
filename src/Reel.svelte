@@ -64,9 +64,6 @@
     import * as mamano from "./assets/mamano.json";
 
     export function getQualifyingMamano(type, year) {
-        // Check if there are query options selected
-        if (type.length === 0 || year.length === 0) return "Please select 1 Mamano Type and Year!";
-
         // Get all mamano that are applicable for this roll
         let qualify = [];
         mamano.default.forEach((e, i) => {
