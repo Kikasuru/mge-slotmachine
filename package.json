@@ -5,7 +5,8 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public --no-clear"
+    "start": "sirv public --no-clear",
+    "deploy": "rollup -c && node gh-pages"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
