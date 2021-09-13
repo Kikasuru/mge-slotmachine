@@ -119,6 +119,15 @@
                 }
             }
         }
+
+        .logos {
+            display: flex;
+            flex-direction: row;
+            padding: 16px;
+            gap: 4px;
+
+            font-size: 24px;
+        }
     }
 
     .title {
@@ -149,6 +158,8 @@
 <script>
     import { createEventDispatcher } from 'svelte';
     import { fly } from 'svelte/transition';
+    import Fa from 'svelte-fa'
+    import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
     const dispatch = createEventDispatcher();
 
@@ -215,6 +226,11 @@
     <div class=title>Credits</div>
     <div>Created by Kikasuru</div>
     <div>Characters by Kenkou Cross</div>
+    
+    <div class=logos>
+        <div on:click={() => {window.open("https://github.com/Kikasuru/mge-slotmachine", '_blank').focus();}}><Fa icon={faGithub} fw=true/></div>
+        <div on:click={() => {window.open("https://twitter.com/KikasuruPizza", '_blank').focus();}}><Fa icon={faTwitter} fw=true/></div>
+    </div>
 
     <div class="close" on:click={() => {dispatch("optsave", { options })}}>✖</div>
 </div>
