@@ -2199,5 +2199,15 @@
             ],
             "year":"2020"
         }
+    },
+    {
+        "name": "Bogie",
+        "img": "/images/Bogie",
+        "opts": {
+            "type": [
+                "demihuman"
+            ],
+            "year":"2021"
+        }
     }
 ]
