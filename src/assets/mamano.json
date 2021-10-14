@@ -2202,7 +2202,7 @@
     },
     {
         "name": "Bogie",
-        "img": "/images/Bogie",
+        "img": "/images/Bogie.png",
         "opts": {
             "type": [
                 "demihuman"
