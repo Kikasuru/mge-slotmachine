@@ -127,7 +127,7 @@
     // Wikia code
     function openWikia() {
         if (currentname !== "") {
-            const url = `https://monstergirlencyclopedia.fandom.com/wiki/${currentname.replace(" ", "_")}`
+            const url = `https://monstergirlencyclopedia.miraheze.org/wiki/${currentname.replace(" ", "_")}`
             window.open(url, '_blank').focus();
         }
     }
