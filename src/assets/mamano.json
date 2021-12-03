@@ -2209,5 +2209,15 @@
             ],
             "year":"2021"
         }
+    },
+    {
+        "name": "Pyrow",
+        "img": "/images/Pyrow.png",
+        "opts": {
+            "type": [
+                "demon"
+            ],
+            "year":"2021"
+        }
     }
 ]
