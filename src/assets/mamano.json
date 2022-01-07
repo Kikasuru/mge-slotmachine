@@ -2219,5 +2219,15 @@
             ],
             "year":"2021"
         }
-    }
+    },
+	{
+		"name": "Krampus",
+		"img": "/images/Krampus.png",
+		"opts": {
+			"type": [
+				"demonbeast"
+			],
+			"year":"2022"
+		}
+	}
 ]
