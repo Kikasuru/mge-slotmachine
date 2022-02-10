@@ -140,15 +140,16 @@
             return;
         }
 
-        if (reelCount === 0) return;
+		let openReels = reels.filter(v => typeof v.isLocked === 'function' && !v.isLocked());
+        if (openReels.length === 0) return;
 
-        reels.forEach((e, i) => {
+        openReels.forEach((e, i) => {
             if (e && e.roll) e.roll(qualify, 200 * i);
         });
 
         // Set spinning to true and set the delay
         spinning = true;
-        let delay = (200 * (reelCount - 1)) + 5500;
+        let delay = (200 * (openReels.length - 1)) + 5500;
 
         setTimeout(() => {
             spinning = false;

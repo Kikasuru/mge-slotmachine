@@ -11,6 +11,37 @@
         flex-direction: column;
         align-items: center;
 
+		.lock {
+			width: 88px;
+			padding: 4px;
+			padding-bottom: 8px;
+
+			border-radius: 8px 8px 0 0;
+
+			background-color: $dark-1;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			position: relative;
+
+			font-size: 12px;
+
+			cursor: pointer;
+			&:hover {
+				background-color: $dark-0;
+				@media (hover: none) {
+					background-color: $dark-1;
+				}
+			}
+
+			&.locked {
+				background-color: $dark-0;
+				top: 4px;
+			}
+		}
+
         .window {
             width: 120px;
             height: 180px;
@@ -85,6 +116,10 @@
     import { tweened } from 'svelte/motion';
     import { quadInOut } from 'svelte/easing';
     import { slide, fly, fade } from 'svelte/transition';
+	import Fa from 'svelte-fa'
+	import { faLock, faUnlock } from '@fortawesome/free-solid-svg-icons'
+
+	let lock = false;
 
     // Rolling code
     const reelItemCount = 30;
@@ -96,12 +131,14 @@
 		easing: quadInOut
     });
 
+	export function isLocked() {return lock;}
+
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
     }
 
     export function roll(qualify, delay) {
-        // Remove all elements in the current reel except for the last one
+		// Remove all elements in the current reel except for the last one
         current = current.slice(-1);
 
         // Create each reel item after it
@@ -134,8 +171,10 @@
 </script>
 
 <div class=container transition:slide>
+	<div class=lock class:locked={lock} on:click={() => {lock = lock ? false : true}}><Fa icon={lock ? faLock : faUnlock} fw=true/></div>
+	
     <div class=window on:click={openWikia}>
-        <div class=reel style='transform: translateY(-{(180 * (reelItemCount - 1)) * $reelPos}px)'>
+		<div class=reel style='transform: translateY(-{(180 * (reelItemCount - 1)) * $reelPos}px)'>
             {#each current as i}
                 {#if i === -1}
                     <div class=reel-item>?</div>
