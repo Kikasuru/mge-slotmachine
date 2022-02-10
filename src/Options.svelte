@@ -159,6 +159,7 @@
     import { createEventDispatcher } from 'svelte';
     import { fly } from 'svelte/transition';
     import Fa from 'svelte-fa'
+	import { faXmark } from '@fortawesome/free-solid-svg-icons'
     import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
     const dispatch = createEventDispatcher();
@@ -232,5 +233,5 @@
         <div on:click={() => {window.open("https://twitter.com/KikasuruPizza", '_blank').focus();}}><Fa icon={faTwitter} fw=true/></div>
     </div>
 
-    <div class="close" on:click={() => {dispatch("optsave", { options })}}>✖</div>
+    <div class="close" on:click={() => {dispatch("optsave", { options })}}><Fa icon={faXmark} fw=true/></div>
 </div>
