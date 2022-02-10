@@ -140,7 +140,7 @@
             return;
         }
 
-		let openReels = reels.filter(v => typeof v.isLocked === 'function' && !v.isLocked());
+		let openReels = reels.filter(v => v !== null && typeof v.isLocked === 'function' && !v.isLocked());
         if (openReels.length === 0) return;
 
         openReels.forEach((e, i) => {
