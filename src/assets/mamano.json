@@ -2229,5 +2229,15 @@
 			],
 			"year":"2022"
 		}
+	},
+	{
+		"name": "Phoenix",
+		"img": "/images/Phoenix.png",
+		"opts": {
+			"type": [
+				"birdman"
+			],
+			"year":"2022"
+		}
 	}
 ]
