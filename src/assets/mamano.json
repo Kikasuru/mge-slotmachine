@@ -2239,5 +2239,15 @@
 			],
 			"year":"2022"
 		}
+	},
+	{
+		"name":"Malef Dragon",
+		"img":"/images/Malef_Dragon.png",
+		"opts":{
+			"type": [
+				"reptile"
+			],
+			"year":"2023"
+		}
 	}
 ]
