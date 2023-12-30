@@ -2249,5 +2249,15 @@
 			],
 			"year":"2023"
 		}
+	},
+	{
+		"name":"Dragonewt",
+		"img":"/images/Dragonewt.png",
+		"opts":{
+			"type": [
+				"reptile"
+			],
+			"year":"2023"
+		}
 	}
 ]
